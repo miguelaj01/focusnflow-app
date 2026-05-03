@@ -16,14 +16,15 @@ class DefaultFirebaseOptions {
     }
   }
 
-  // placeholder — will be replaced by flutterfire configure
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'YOUR_API_KEY',
-    appId: 'YOUR_APP_ID',
-    messagingSenderId: 'YOUR_SENDER_ID',
-    projectId: 'YOUR_PROJECT_ID',
-    storageBucket: 'YOUR_STORAGE_BUCKET',
+    apiKey: 'AIzaSyAcnvHV0c8yPYpJg-Oim3Eo57FXc7oKP-8',
+    appId: '1:1070441052675:android:596e6457a8d6ad3d8b6c36',
+    messagingSenderId: '1070441052675',
+    projectId: 'fir-auth-app-a32da',
+    storageBucket: 'fir-auth-app-a32da.firebasestorage.app',
   );
+
+  // placeholder — will be replaced by flutterfire configure
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'YOUR_API_KEY',
