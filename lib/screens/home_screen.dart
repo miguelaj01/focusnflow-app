@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
 import '../services/firestore_service.dart';
+import '../services/notification_service.dart';
 import 'dashboard_screen.dart';
 import 'task_entry_screen.dart';
 import 'room_finder_screen.dart';
@@ -27,8 +28,12 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    // seed rooms on first load
     FirestoreService().seedRoomsIfEmpty();
+    // initialize fcm notifications
+    final uid = AuthService().currentUser?.uid;
+    if (uid != null) {
+      NotificationService().initialize(uid);
+    }
   }
 
   @override
