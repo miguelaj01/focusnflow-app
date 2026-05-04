@@ -1,5 +1,7 @@
 # focusnflow
 
+**demo video:** https://youtu.be/HamKvCo2O_A
+
 flutter app that helps college students plan their study time, find open rooms on campus, and study with friends. built with firebase for real-time sync.
 
 ## features
